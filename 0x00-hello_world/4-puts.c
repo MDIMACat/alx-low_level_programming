@@ -1,6 +1,11 @@
 #include <stdio.h>
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (success)
+ */
 int main(void)
-{	char puzzle[80];
-	puts("Programming is like building a multilingual puzzle");
+{
+	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
