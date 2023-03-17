@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  *Description: 'show the Upper case and lower case alphabets'
- * Return 0 (Success)
+ * Return: Always 0 (Success)
  *
  */
 int main(void)
@@ -15,7 +15,7 @@ int main(void)
 			putchar(i);
 			i++;
 		}
-	i = 'A';
+	i = 'A'i;
 		while (i <= 'Z')
 		{
 			putchar(i);
