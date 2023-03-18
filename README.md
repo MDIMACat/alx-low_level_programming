@@ -8,3 +8,4 @@ These tasks will be executed in designated directories which will be listed in t
 
 these directories being:
 	1. 0x00 C-Hello, World
+	2. 0x01. C - Variables, if, else, while
