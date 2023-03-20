@@ -1,6 +1,6 @@
-#ifndef MAIN_H
-#define MAIN_H
+/**
+ * main header file with function prototypes
+ */
 
-int _putchar(char);
+int _putchar(char c);
 
-#endif
