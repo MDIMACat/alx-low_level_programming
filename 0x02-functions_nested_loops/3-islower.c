@@ -7,15 +7,12 @@
  */
 int _islower(int c)
 {
-	int lower = 'c';
-
-		if (islower(lower) == 0)
-		{
-			_putchar (0 + '0');
-		}
-		else
-		{
-			_putchar(1 + '0');
-		}
-	return (0);
+	if (c >= 97 && c <= 122)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
