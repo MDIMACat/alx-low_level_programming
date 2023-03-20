@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - Print the alphabet
+ * print_alphabet - prints out alphabets in small letters
  *
  * Return: Always 0 (success)
  */
@@ -12,5 +12,5 @@ void print_alphabet(void)
 	{
 		_putchar(i);
 	}
-	_putchar('\n')
+	_putchar('\n');
 }
