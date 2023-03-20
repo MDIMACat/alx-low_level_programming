@@ -7,7 +7,7 @@
  */
 int _islower(int c)
 {
-	int lower = 'c'
+	int lower = 'c';
 
 		if (islower(lower) == 0)
 		{
