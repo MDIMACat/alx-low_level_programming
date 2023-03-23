@@ -8,7 +8,9 @@ int main(void)
 {
 	int i;
 
-	for (i = 1; i <= 100; i++)
+	i = 1;
+	printf("%d", i);
+	for (i = 2; i <= 100; i++)
 	{
 		if ((i % 3 == 0) && (i % 5 == 0))
 		{
@@ -24,12 +26,9 @@ int main(void)
 		}
 		else
 		{
-			printf("%d ", i);
-		}
-		if (i != 100)
-		{
-			printf(" ");
+			printf("%d", i);
 		}
 	}
+	printf("\n");
 	return (0);
 }
