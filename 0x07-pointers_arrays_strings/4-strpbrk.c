@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _strpbrk - searches a string for any of a set of bytes
- * @s: parameter 
+ * @s: parameter
  * @accept: parameter
  *
  * Return: pointer to charcters in s or 0
@@ -30,7 +30,7 @@ char *_strpbrk(char *s, char *accept)
 	}
 	if (flag == 1)
 	{
-		return &s[pos];
+		return (&s[pos]);
 	}
 	else
 		return (0);
