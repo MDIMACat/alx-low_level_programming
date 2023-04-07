@@ -18,18 +18,19 @@ int main(int argc, char *argv[])
 		for (i = 0; i < argc; i++)
 		{
 			n = atoi(argv[i]);
-			if (n > 0)
+			if (n > 0 && argc < 48 && argc > 57)
 			{
-				result += n;
+				printf("Error\n");
+				return (1);
 			}
+			result += n;
 		}
 		printf("%d\n", result);
 	}
-	printf("0");
-	if (argc < 48 || argc > 57)
+	else
 	{
-		printf("Error\n");
-		return (1);
+		printf("0");
 	}
 	return (0);
 }
+
