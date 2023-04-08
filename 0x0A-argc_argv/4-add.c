@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 /**
  * main - main function
  * @argc: argument count parameter
@@ -15,15 +16,13 @@ int main(int argc, char *argv[])
 
 	if (argc > 1)
 	{
-		for (i = 0; i < argc; i++)
+		for (i = 1; i < argc; i++)
 		{
 			n = atoi(argv[i]);
-			if (n > 0 && argc < 48 && argc > 57)
+			if(n > 0)
 			{
-				printf("Error\n");
-				return (1);
+				result += n;
 			}
-			result += n;
 		}
 		printf("%d\n", result);
 	}
