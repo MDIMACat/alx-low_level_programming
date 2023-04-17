@@ -4,7 +4,7 @@
  * struct dog - this struct prints out dog name, age, owner
  * @name: name of dog (parameter)
  * @age: age of dog (parameter)
- * @owner: the pwner of dog (parameter)
+ * @owner: the owner of dog (parameter)
  */
 
 struct dog
