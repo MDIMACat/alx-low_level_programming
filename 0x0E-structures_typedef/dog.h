@@ -16,4 +16,17 @@ struct dog
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 
+/**
+ * struct dog - new alias for dog using typedef
+ * @name: name of dog parameter
+ * @age: age of dog  parameter
+ * @owner: the owner parameter
+ */
+typedef struct dog
+{
+	char *name;
+	float *age;
+	char *owner;
+} dog_t;
+
 #endif
