@@ -2,7 +2,7 @@
 /**
  * int_index - function that searches for an integer.
  * @array: The array parameter
- * @size: size of the array
+ * @size: size of the arraiy
  * @cmp: function pointer that points to function parameter
  * Return: Always 0 (success)
  */
@@ -10,7 +10,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
 
-	if (size <= 0)
+	if (array == NULL || size <= 0 || cmp == NULL)
 	{
 		return (-1);
 	}
