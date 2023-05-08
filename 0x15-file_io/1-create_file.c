@@ -11,27 +11,28 @@
 int create_file(const char *filename, char *text_content)
 {
 	int fd;
-	size_t length; 
-	ssize_t written;
+	int length = 0;
+	int buf;
 
 	if (filename == NULL)
-	{
-		return (0);
-	}
-	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC | S_IRUSR | S_IWUSR);
-	if (fd == -1)
 	{
 		return (-1);
 	}
 	if (text_content != NULL)
 	{
-		length = strlen(text_content);
-		written = write(fd, text_content, length);
-		if (written == -1)
-		{
-			close(fd);
+		while (text_content[length] != '\0')
+			length++;
+	}
+	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+	if (fd == -1)
+	{
+		return (-1);
+	}
+	if (length > 0)
+	{
+		buf = write(fd, text_content, length);
+		if (buf == -1)
 			return (-1);
-		}
 	}
 	close(fd);
 	return (1);
