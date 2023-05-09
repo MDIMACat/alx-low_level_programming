@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 	char buffer[BUF_SIZE];
 
 	if (argc != 3)
-		print_err("Usage:%s file_from file_to \n", cp, 97);
+		print_err("Usage:%s file_from file_to \n", argv[0], 97);
 	fd_from = open(argv[1], O_RDONLY);
 	if (fd_from == -1)
 		print_err("Error: Can't read from file %s\n", argv[1], 98);
