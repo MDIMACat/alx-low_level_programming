@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 	fd_from = open(argv[1], O_RDONLY);
 	if (fd_from == -1)
 		print_err("Error: Can't read from file %s\n", argv[1], 98);
-	fd_to = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0644);
+	fd_to = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
 	if (fd_to == -1)
 		print_err("Error: Can't write to %s\n", argv[2], 99);
 	while ((num_read = read(fd_from, buffer, BUF_SIZE)) > 0)
