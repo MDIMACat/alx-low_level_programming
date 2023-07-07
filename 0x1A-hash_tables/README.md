@@ -10,5 +10,6 @@
         Write a function that gives you the index of a key.
     3. >>> ht['betty'] = 'cool' 
         Write a function that adds an element to the hash table.
-
+    4. >>> ht['betty'] 
+        Write a function that retrieves a value associated with a key.
 
