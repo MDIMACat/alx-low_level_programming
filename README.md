@@ -18,3 +18,8 @@ these directories being:
  	8. 0x08-recursion .
  	9. 0x09-static,libraries.
  	10. 0x0A-argc,argv
+	0x0C-more_malloc_free         
+	0x14-bit_manipulation
+	0x06-pointers_arrays_strings      
+	0x0D-preprocessor             
+	0x15-file_io
